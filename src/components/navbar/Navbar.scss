@@ -1,0 +1,70 @@
+@import '../../utils/variables';
+
+.navbar {
+  color: white;
+  font-size: 0.9rem;
+  height: 4.3rem;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 0%;
+  width: 100%;
+  z-index: 9999;
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%);
+  transition: 0.5s ease;
+
+  &.scrolled {
+    background: $main-color;
+  }
+
+  .container {
+    padding: 0 3.5rem;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      cursor: pointer;
+    }
+
+    img {
+      height: 1.5rem;
+      cursor: pointer;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.3rem;
+
+      img {
+        margin-right: 1.5rem;
+      }
+    }
+
+    .right {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 1.5rem;
+      align-items: center;
+
+      i {
+        cursor: pointer;
+      }
+
+      i.bx.bxs-down-arrow {
+        font-size: 0.6rem;
+      }
+
+      img {
+        height: 2rem;
+        border-radius: 15%;
+        margin-right: -0.7rem;
+      }
+    }
+  }
+}
